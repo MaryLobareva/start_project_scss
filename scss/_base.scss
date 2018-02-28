@@ -1,0 +1,32 @@
+html {
+	font-family: $text-light;
+	font-size: 20px;
+}
+img {max-width: 100%;}
+
+.wrap {
+	max-width: 1280px;
+	min-width: 320px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	@include responsive(large){
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	@include responsive(medium){
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+	@include responsive(tablet){
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	@include responsive(mobile){
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	@include responsive(mobile-xs){
+		padding-left: 1em;
+		padding-right: 1em;
+	}	
+}
